@@ -13,6 +13,11 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   background-color: #373e57;
   color: #ccc8db;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -77,6 +82,7 @@ body {
   background-position: 22px 50%;
   color: #fff;
   font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
   font-weight: 600;
 }
 .search-bar input::placeholder {
@@ -92,7 +98,7 @@ body {
 
 .profile {
   position: relative;
-  height: 45vh;
+  height: 46vh;
   min-height: 250px;
   max-height: 350px;
   z-index: 1;
@@ -135,7 +141,10 @@ body {
 }
 
 .profile-menu-link {
-  padding: 20px 15px;
+  display: flex;
+  justify-content: center;
+  width: 75px;
+  padding: 20px 0;
   color: lightslategrey;
   transition: 0.3s;
   cursor: pointer;
@@ -170,9 +179,10 @@ body {
   font-weight: 600;
   font-family: "DM Sans", sans-serif;
 }
-#hello-msg {
+.profile-name p {
   margin: 0;
   font-size: 20px;
+  line-height: 17px;
 }
 
 .timeline {
@@ -250,7 +260,6 @@ body {
 
 .event-title {
   color: #c3c5d5;
-  margin-bottom: 5px;
   font-family: "DM Sans", sans-serif;
   font-weight: 600;
   padding: 0 14px;

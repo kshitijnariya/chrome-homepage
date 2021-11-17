@@ -2,97 +2,107 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Responsive Social Platform UI</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
-
+  <title>New Tab</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<div class="container" x-data="{ rightSide: false, leftSide: false }">
-
+<div class="container">
   <div class="main">
     <div class="main-container">
+
       <div class="profile">
         <div class="profile-avatar">
-          <img src="./My%20Post.jpg" alt="" class="profile-img">
-          <div class="profile-name"><p id="hello-msg">Good <span>Morning</span>!</p> Kshitij Nariya</div>
+          <img src="./img/My%20Post.jpg" alt="" class="profile-img">
+          <div class="profile-name"><p>Good <span id="timemsg"></span>!</p> Kshitij Nariya</div>
         </div>
-        <img src="https://images.unsplash.com/photo-1577071835592-d5d55ffef660?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=335" alt="" class="profile-cover">
+        <img src="./img/cover.jpg" alt="" class="profile-cover">
         <div class="profile-menu">
           <div class="search-bar">
-            <input type="text" placeholder="Search Google or type a URL" />
+            <input id="search" class="search" type="text" placeholder="Search Google or type a URL" />
           </div>
-          <a class="profile-menu-link"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="20px" ></a>
-          <a class="profile-menu-link"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png" width="20px" ></a>
-          <a class="profile-menu-link"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="20px" ></a>
-          <a class="profile-menu-link"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="20px" ></a>
-
+          <a href="https://ums.paruluniversity.ac.in/" class="profile-menu-link" target="_blank"><img src="./img/pumis.png" height="20px" ></a>
+          <a href="https://mail.google.com/mail/u/0/#inbox" class="profile-menu-link"><img src="./img/gmail.png" height="20px" ></a>
+          <a href="https://classroom.google.com/c/NDE5NjExMTEyMTIw" class="profile-menu-link"><img src="./img/classroom.png" height="20px" ></a>
+          <a href="https://drive.google.com/drive/my-drive" class="profile-menu-link"><img src="./img/drive.png" height="20px" ></a>
+          <a href="https://meet.google.com/?pli=1" class="profile-menu-link"><img src="./img/meet.png" height="20px" ></a>
 
         </div>
       </div>
 
       <div class="timeline">
         <div class="timeline-left">
-          <div class="event box">
+          <a href="https://codepen.io/">
+            <div class="event box">
             <div class="event-wrapper">
-              <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" class="event-img" />
-              <div class="event-date">
-                <div class="event-month">Jan</div>
-                <div class="event-day">01</div>
-              </div>
-              <div class="event-title">Winter Wonderland</div>
-              <div class="event-subtitle">01st Jan, 2019 07:00AM</div>
+              <img src="./img/codepen.png" class="event-img" />
+              <div class="event-title">Codepen: Online Code Edi...</div>
+              <div class="event-subtitle">codepen.io</div>
             </div>
           </div>
+          </a>
         </div>
         <div class="timeline-left">
-          <div class="event box">
-            <div class="event-wrapper">
-              <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" class="event-img" />
-              <div class="event-date">
-                <div class="event-month">Jan</div>
-                <div class="event-day">01</div>
-              </div>
-              <div class="event-title">Winter Wonderland</div>
-              <div class="event-subtitle">01st Jan, 2019 07:00AM</div>
-            </div>
-          </div>
-        </div>
-        <div class="timeline-left">
-          <div class="event box">
-            <div class="event-wrapper">
-              <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" class="event-img" />
-              <div class="event-date">
-                <div class="event-month">Jan</div>
-                <div class="event-day">01</div>
-              </div>
-              <div class="event-title">Winter Wonderland</div>
-              <div class="event-subtitle">01st Jan, 2019 07:00AM</div>
-            </div>
-          </div>
-        </div>
-        <div class="timeline-left">
-          <div class="event box">
-            <div class="event-wrapper">
-              <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" class="event-img" />
-              <div class="event-date">
-                <div class="event-month">Jan</div>
-                <div class="event-day">01</div>
-              </div>
-              <div class="event-title">Winter Wonderland</div>
-              <div class="event-subtitle">01st Jan, 2019 07:00AM</div>
-            </div>
-          </div>
-        </div>
+          <a href="https://mail.google.com/mail/u/0/#inbox">
+            <div class="event box">
+              <div class="event-wrapper">
+                <img src="./img/Gmail1.png" class="event-img" />
 
+                <div class="event-title">Gmail</div>
+                <div class="event-subtitle">mail.google.com</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="timeline-left">
+          <a href="https://exams.paruluniversity.ac.in/">
+            <div class="event box">
+              <div class="event-wrapper">
+                <img src="./img/examspu.png" class="event-img" />
+
+                <div class="event-title">Exam Corner</div>
+                <div class="event-subtitle">exams.parulunivesity.ac.in</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="timeline-left">
+          <a href="https://ums.paruluniversity.ac.in/">
+            <div class="event box">
+              <div class="event-wrapper">
+                <img src="./img/pumis1.png" class="event-img" />
+                <div class="event-title">PUMIS</div>
+                <div class="event-subtitle">ums.paruluniversity.ac.in</div>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </div>
 
-
 </div>
 <!-- partial -->
-  <script src='https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.9.4/dist/alpine.js'></script>
+  <script>
+    const input = document.getElementById("search");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+       event.preventDefault();
+       window.open('http://google.com/search?q='+input.value, "_self");
+      }
+    });
+  </script>
+  <script>
+    const today = new Date();
+    const curHr = today.getHours();
+    const timemsg = document.getElementById("timemsg");
+    if (curHr < 12) {
+      timemsg.innerText = "Morning";
+    } else if (curHr < 18) {
+      timemsg.innerText = "Afternoon";
+    } else {
+      timemsg.innerText = "Evening";
+    }
+  </script>
 </body>
 </html>
